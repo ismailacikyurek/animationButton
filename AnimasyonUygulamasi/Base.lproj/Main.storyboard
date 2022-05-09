@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimasyonUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIG-bb-gFN">
+                                <rect key="frame" x="319" y="720" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eUQ-vt-Ma6"/>
+                                    <constraint firstAttribute="width" constant="60" id="tYT-jv-hHy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabMain"/>
+                                <connections>
+                                    <action selector="btnMainTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tH-ka-LU7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npe-FU-2Dd">
+                                <rect key="frame" x="319" y="638" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2Ap-OG-zxQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="5tR-zX-qzG"/>
+                                    <constraint firstAttribute="height" constant="60" id="F6l-Df-WAh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Imj-be-8BI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabBirinci"/>
+                                <connections>
+                                    <action selector="btnBirinciTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7aM-ea-p5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-zX-xmo">
+                                <rect key="frame" x="319" y="556" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.93440609600000002" blue="0.040816608560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="UpX-sp-fIc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="gs6-Oq-AzR"/>
+                                    <constraint firstAttribute="height" constant="60" id="iqh-VZ-EKh"/>
+                                    <constraint firstAttribute="width" constant="60" id="uNZ-xe-0Ug"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabIkinci"/>
+                                <connections>
+                                    <action selector="btnikinciTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnL-9v-ZvI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vIG-bb-gFN" secondAttribute="bottom" constant="82" id="EbJ-wj-ZAM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z9z-zX-xmo" secondAttribute="trailing" constant="35" id="KLG-tH-PMQ"/>
+                            <constraint firstItem="npe-FU-2Dd" firstAttribute="top" secondItem="z9z-zX-xmo" secondAttribute="bottom" constant="22" id="Kbs-Rp-eoq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="npe-FU-2Dd" secondAttribute="trailing" constant="35" id="NcP-8T-L35"/>
+                            <constraint firstItem="vIG-bb-gFN" firstAttribute="top" secondItem="npe-FU-2Dd" secondAttribute="bottom" constant="22" id="rVa-x7-SxF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vIG-bb-gFN" secondAttribute="trailing" constant="35" id="sX2-Ux-Yb1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBirinci" destination="npe-FU-2Dd" id="N7X-wp-EUL"/>
+                        <outlet property="btnikinci" destination="z9z-zX-xmo" id="RqO-WE-spN"/>
+                        <outlet property="btnmain" destination="vIG-bb-gFN" id="w66-vI-keK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fabBirinci" width="36" height="36"/>
+        <image name="fabIkinci" width="36" height="36"/>
+        <image name="fabMain" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
